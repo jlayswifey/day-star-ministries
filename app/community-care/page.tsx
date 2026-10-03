@@ -76,7 +76,7 @@ export default function CommunityCare(){
           <div className="form-grid">
             {["Name or preferred name","Best way to contact you","What do you need right now?","Clothing / Pantry / Household / Transportation / Other","Is this urgent?","Anything we should know about privacy or safety?"].map((x,i)=><div className={'field '+(i>1?'full':'')} key={x}>{x}</div>)}
           </div>
-          <div className="actions"><a className="button" href={site.phoneHref}>Call Day Star • {site.phoneDisplay}</a></div><div className="privacy-note"><strong>Your dignity matters.</strong> A request for help should never automatically become a public story, prayer request, or social post.</div>
+          <div className="actions"><a className="button" href={site.forms.communityCare} target="_blank" rel="noreferrer">Submit Community Care Request</a><a className="button secondary" href={site.phoneHref}>Call Day Star • {site.phoneDisplay}</a></div><div className="privacy-note"><strong>Your dignity matters.</strong> A request for help should never automatically become a public story, prayer request, or social post.</div>
         </div>
         <aside className="care-side-card">
           <span>72 HR</span>
