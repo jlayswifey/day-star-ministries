@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { site } from "@/lib/site";
 
 export default function CommunityCare(){
   return <main>
@@ -71,11 +72,11 @@ export default function CommunityCare(){
         <div>
           <div className="eyebrow">Request Help</div>
           <h2>Tell us what would make a difference.</h2>
-          <p className="lead">This is the structure for the Community Care request pathway. The live submission connection is the next wiring step.</p>
+          <p className="lead">Use the request structure below to think through what would help, then call Day Star so the need can be acknowledged and connected to the right person.</p>
           <div className="form-grid">
             {["Name or preferred name","Best way to contact you","What do you need right now?","Clothing / Pantry / Household / Transportation / Other","Is this urgent?","Anything we should know about privacy or safety?"].map((x,i)=><div className={'field '+(i>1?'full':'')} key={x}>{x}</div>)}
           </div>
-          <div className="privacy-note"><strong>Your dignity matters.</strong> A request for help should never automatically become a public story, prayer request, or social post.</div>
+          <div className="actions"><a className="button" href={site.phoneHref}>Call Day Star • {site.phoneDisplay}</a></div><div className="privacy-note"><strong>Your dignity matters.</strong> A request for help should never automatically become a public story, prayer request, or social post.</div>
         </div>
         <aside className="care-side-card">
           <span>72 HR</span>
