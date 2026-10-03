@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { site } from "@/lib/site";
 export default function New(){return <main>
 <section className="page-hero page-hero-welcome"><div className="container"><div className="eyebrow light">I’m New</div><h1>You Are Welcome Here.</h1><p>Your first visit should feel simple. Come as you are, find a seat, and let us make the rest easy.</p></div></section>
 <section className="section"><div className="container visit-grid">
 <div><div className="eyebrow">Plan Your Visit</div><h2>What to expect.</h2><p className="lead">Day Star Ministries is a warm, Christ-centered church community in Bassett, Virginia. You do not need to know anyone, dress a certain way, or have everything figured out before you walk through the door.</p>
 <div className="info-cards"><div className="info-card"><strong>Sunday School</strong><span>9:00 AM</span></div><div className="info-card"><strong>Sunday Morning</strong><span>10:00 AM</span></div><div className="info-card"><strong>Sunday Evening</strong><span>6:00 PM</span></div><div className="info-card"><strong>Wednesday Study</strong><span>7:00 PM</span></div></div>
-<div className="actions"><Link className="button" href="/prayer">Need Prayer?</Link><Link className="button secondary" href="/watch">Watch First</Link></div></div>
+<div className="actions"><a className="button" href={site.directionsHref} target="_blank" rel="noreferrer">Get Directions</a><a className="button secondary" href={site.phoneHref}>Call {site.phoneDisplay}</a><Link className="button secondary" href="/watch">Watch First</Link></div></div>
 <div className="church-feature"><img src="/church.jpg" alt="Day Star Ministries church building"/><div><strong>6387 Virginia Ave</strong><span>Bassett, VA 24055</span></div></div>
 </div></section>
 <section className="section alt"><div className="container"><div className="grid"><div className="card"><h3>Come as you are.</h3><p>There is no pressure to perform. Our goal is to help you feel welcomed, seen, and connected.</p></div><div className="card"><h3>Bring the family.</h3><p>As ministry details are confirmed, children and youth information will live here in one easy place.</p></div><div className="card"><h3>Questions are welcome.</h3><p>If you are unsure where to go or what to expect, reach out and we will help you before your visit.</p></div></div></div></section>
