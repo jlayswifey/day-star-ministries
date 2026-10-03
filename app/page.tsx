@@ -31,7 +31,7 @@ export default function Home(){
 
     <section className="section pastor-home">
       <div className="container split-feature">
-        <div className="portrait-wrap"><img src="/pastor-sammy.jpg" alt="Pastor Sammy Caldwell"/></div>
+        <div className="portrait-wrap"><img src="/pastor-sammy-clean.jpg" alt="Pastor Sammy Caldwell"/></div>
         <div>
           <div className="eyebrow">From Our Pastor</div>
           <h2>Welcome to Day Star.</h2>
