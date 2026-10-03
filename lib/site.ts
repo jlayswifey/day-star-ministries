@@ -10,6 +10,7 @@ export const site = {
     { href: "/events", label: "Events" },
     { href: "/prayer", label: "Prayer" },
     { href: "/stories", label: "Stories" },
+    { href: "/community-care", label: "Care" },
     { href: "/give", label: "Give" }
   ]
 };
