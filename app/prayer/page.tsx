@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { site } from "@/lib/site";
 export default function Prayer(){return <main>
 <section className="page-hero page-hero-prayer"><div className="container"><div className="eyebrow light">Prayer</div><h1>How Can We Pray With You?</h1><p>You do not have to carry everything alone. Share a request, join Tuesday Night Prayer Live, or simply let us know you need someone to stand with you in prayer.</p></div></section>
 <section className="section"><div className="container prayer-layout"><div><div className="eyebrow">Prayer Request</div><h2>Share what’s on your heart.</h2><div className="form-grid">{["Name (optional)","Contact information (optional)","Prayer request","May we contact you?","May this request be mentioned publicly?","Keep my request anonymous"].map((x,i)=><div className={'field '+(i===2?'full':'')} key={x}>{x}</div>)}</div><div className="privacy-note">Requests are handled with care. Public mention and private follow-up should always be treated separately.</div></div>
-<div className="prayer-card"><span>✦</span><h3>Tuesday Night Prayer Live</h3><p>Join Pastor Sammy for prayer on Facebook, then revisit recordings through the Watch archive.</p><Link className="button" href="/watch">Watch & Pray</Link></div></div></section>
+<div className="prayer-card"><span>✦</span><h3>Need Prayer Now?</h3><p>Call Day Star and let someone know you would like prayer, or use the Watch archive to stay connected with Tuesday Night Prayer Live.</p><div className="actions"><a className="button" href={site.phoneHref}>Call {site.phoneDisplay}</a><Link className="button secondary" href="/watch">Watch & Pray</Link></div></div></div></section>
 </main>}
