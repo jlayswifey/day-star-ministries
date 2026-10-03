@@ -6,6 +6,12 @@ export const site = {
   phoneHref: "tel:+12766293918",
   address: "6387 Virginia Ave, Bassett, VA 24055",
   directionsHref: "https://www.google.com/maps/search/?api=1&query=6387+Virginia+Ave+Bassett+VA+24055",
+  forms: {
+    prayer: "https://form.jotform.com/262752612540049",
+    communityCare: "https://form.jotform.com/262752864119060",
+    c3: "https://form.jotform.com/262752530768060",
+    stories: "https://form.jotform.com/262752125188056"
+  },
   nav: [
     { href: "/im-new", label: "I'm New" },
     { href: "/watch", label: "Watch" },
