@@ -73,10 +73,7 @@ export default function CommunityCare(){
           <div className="eyebrow">Request Help</div>
           <h2>Tell us what would make a difference.</h2>
           <p className="lead">Use the request structure below to think through what would help, then call Day Star so the need can be acknowledged and connected to the right person.</p>
-          <div className="form-grid">
-            {["Name or preferred name","Best way to contact you","What do you need right now?","Clothing / Pantry / Household / Transportation / Other","Is this urgent?","Anything we should know about privacy or safety?"].map((x,i)=><div className={'field '+(i>1?'full':'')} key={x}>{x}</div>)}
-          </div>
-          <div className="actions"><a className="button" href={site.forms.communityCare} target="_blank" rel="noreferrer">Submit Community Care Request</a><a className="button secondary" href={site.phoneHref}>Call Day Star • {site.phoneDisplay}</a></div><div className="privacy-note"><strong>Your dignity matters.</strong> A request for help should never automatically become a public story, prayer request, or social post.</div>
+          <p className="lead">The request form covers clothing, pantry or food needs, household basics, transportation, urgency, contact preferences, and any privacy or safety information you want the team to know.</p><div className="tag-row"><span className="tag">Clothing</span><span className="tag">Pantry / Food</span><span className="tag">Household</span><span className="tag">Transportation</span><span className="tag">Other</span></div><div className="actions"><a className="button" href={site.forms.communityCare} target="_blank" rel="noreferrer">Open Community Care Request Form</a><a className="button secondary" href={site.phoneHref}>Call Day Star • {site.phoneDisplay}</a></div><div className="privacy-note"><strong>Your dignity matters.</strong> A request for help should never automatically become a public story, prayer request, or social post.</div>
         </div>
         <aside className="care-side-card">
           <span>72 HR</span>
