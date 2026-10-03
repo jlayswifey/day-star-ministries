@@ -85,8 +85,8 @@ export default function Home(){
         <h2>See a need. Make a connection. Join a mission.</h2>
         <div className="grid">
           <Link className="image-card care-card" href="/community-care"><div><span>COMMUNITY CARE</span><h3>Closet & Pantry</h3><p>Take what you need. Give what you can. No cost.</p><strong>Explore Community Care →</strong></div></Link>
-          <div className="image-card skills-card"><div><span>SKILLS & SERVICE</span><h3>Gifts Become Service</h3><p>Learn. Practice. Serve. Prove. Earn.</p></div></div>
-          <div className="image-card stories-card"><div><span>DAY STAR STORIES</span><h3>Real people. Real stories. A living God.</h3><p>Faith and impact stories shared with care and permission.</p></div></div>
+          <Link className="image-card skills-card" href="/skills-service"><div><span>SKILLS & SERVICE</span><h3>Gifts Become Service</h3><p>Learn. Practice. Prove. Serve. Earn.</p><strong>Explore Skills & Service →</strong></div></Link>
+          <Link className="image-card stories-card" href="/stories"><div><span>DAY STAR STORIES</span><h3>Real people. Real stories. A living God.</h3><p>Faith and impact stories shared with care and permission.</p><strong>Explore Day Star Stories →</strong></div></Link>
         </div>
       </div>
     </section>
