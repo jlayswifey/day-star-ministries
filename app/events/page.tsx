@@ -6,3 +6,4 @@ export default function Events(){return <main>
 <div className="event-card"><span>OUTREACH</span><h3>C³ Connections</h3><p>Coffee • Conversation • Christ pilot connections and outreach opportunities will appear here as they launch.</p></div>
 </div></div></section>
 </main>
+}
