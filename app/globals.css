@@ -47,3 +47,16 @@ linear-gradient(125deg,#061426 0%,#0b2e53 58%,#654e28 100%)}.page-hero:after{con
 .c3-feature .button:focus-visible,.c3-expanded-hero a:focus-visible{outline:3px solid #835b11;outline-offset:4px}
 @media(max-width:700px){.c3-expanded-hero{padding:75px 0 70px}.c3-expanded-hero:before{right:0;top:10%}.c3-radiance .c3-light-cross{font-size:140px}.c3-home-showcase{padding:55px 0}.c3-radiance{min-height:370px}}
 @media(prefers-reduced-motion:reduce){.c3-radiance,.c3-expanded-hero{scroll-behavior:auto}}
+
+/* Typography refresh — formal, clean, less decorative (Oct 11, 2026) */
+:root{--font-formal:"Aptos","Segoe UI",Arial,Helvetica,sans-serif}
+body{font-family:var(--font-formal)}
+.hero h1,.section h2,.visit-band h2,.page-hero h1,.visual-content h3,
+.image-card h3,.card h3,.feature-card h3,.cta-band h3,.event-card h3,
+.care-action-card h3,.care-side-card h3,.story-form h3,.prayer-card h3,
+.give-trust-card h3,.footer-title,.closing-light blockquote,.story-quote,
+.care-quote,.c3-visual p,.signature,.hero-script,.c3-hero-mantra{
+font-family:var(--font-formal)}
+.hero h1,.page-hero h1{font-weight:750;letter-spacing:-.035em;line-height:1.08}
+.section h2,.visit-band h2{font-weight:720;letter-spacing:-.028em;line-height:1.13}
+.hero-script,.signature,.c3-hero-mantra{font-style:normal;letter-spacing:-.01em}
