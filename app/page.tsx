@@ -54,16 +54,16 @@ export default function Home(){
       </article>
     </section>
 
-    <section className="section c3-feature">
+    <section className="section c3-feature c3-home-showcase">
       <div className="container c3-split">
         <div>
-          <div className="eyebrow">The Power of Connection, Multiplied</div>
+          <div className="eyebrow">C³ · The Power of Connection, Multiplied</div>
           <h2>Coffee • Conversation • Christ</h2>
           <p className="lead">C³ creates intentional, Christ-centered connection across generations and beyond church walls. Coffee is optional. Connection is essential.</p>
           <div className="pathway"><div><span>☕</span>Coffee</div><div><span>💬</span>Conversation</div><div><span>✝</span>Christ</div><div><span>♡</span>Community</div><div><span>∞</span>Connection</div></div>
           <div className="actions"><Link className="button" href="/connect">Explore C³</Link><Link className="button secondary" href="/stories">Share Your Story</Link></div>
         </div>
-        <div className="c3-visual"><div className="c3-cup">C³</div><div className="c3-star">✦</div><p>One connection creates another.<br/>One conversation creates another.<br/>One act of service creates another.</p></div>
+        <div className="c3-visual c3-radiance"><div className="c3-light-cross" aria-hidden="true">✝</div><div className="c3-cup">C³</div><div className="c3-star">✦</div><p>One connection creates another.<br/>One conversation creates another.<br/>One act of service creates another.</p></div>
       </div>
     </section>
 
