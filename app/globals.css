@@ -48,15 +48,24 @@ linear-gradient(125deg,#061426 0%,#0b2e53 58%,#654e28 100%)}.page-hero:after{con
 @media(max-width:700px){.c3-expanded-hero{padding:75px 0 70px}.c3-expanded-hero:before{right:0;top:10%}.c3-radiance .c3-light-cross{font-size:140px}.c3-home-showcase{padding:55px 0}.c3-radiance{min-height:370px}}
 @media(prefers-reduced-motion:reduce){.c3-radiance,.c3-expanded-hero{scroll-behavior:auto}}
 
-/* Typography refresh — formal, clean, less decorative (Oct 11, 2026) */
-:root{--font-formal:"Aptos","Segoe UI",Arial,Helvetica,sans-serif}
-body{font-family:var(--font-formal)}
+/* Approved typography direction: Elegant Hybrid | Oct 14 2026
+   Only typography declarations change. Existing layout, image references,
+   photos, C3 artwork treatment, and color system remain untouched. */
+:root{
+  --font-body:"Aptos","Segoe UI",Arial,Helvetica,sans-serif;
+  --font-heading:"Palatino Linotype","Book Antiqua",Georgia,serif;
+}
+body{font-family:var(--font-body)}
 .hero h1,.section h2,.visit-band h2,.page-hero h1,.visual-content h3,
 .image-card h3,.card h3,.feature-card h3,.cta-band h3,.event-card h3,
 .care-action-card h3,.care-side-card h3,.story-form h3,.prayer-card h3,
 .give-trust-card h3,.footer-title,.closing-light blockquote,.story-quote,
 .care-quote,.c3-visual p,.signature,.hero-script,.c3-hero-mantra{
-font-family:var(--font-formal)}
-.hero h1,.page-hero h1{font-weight:750;letter-spacing:-.035em;line-height:1.08}
-.section h2,.visit-band h2{font-weight:720;letter-spacing:-.028em;line-height:1.13}
-.hero-script,.signature,.c3-hero-mantra{font-style:normal;letter-spacing:-.01em}
+  font-family:var(--font-heading);
+  font-style:normal;
+}
+.hero h1,.page-hero h1{font-weight:700;letter-spacing:-.018em;line-height:1.07}
+.section h2,.visit-band h2{font-weight:700;letter-spacing:-.013em;line-height:1.12}
+.hero-script,.signature,.c3-hero-mantra{font-weight:500;letter-spacing:.005em}
+p,nav a,.button,.feature-card p,.card p,.eyebrow,.hero-kicker,.hero-info,
+.c3-feature .pathway{font-family:var(--font-body)}
